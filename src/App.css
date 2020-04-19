@@ -54,7 +54,8 @@ input[type="submit"]:hover {
   padding: 1em;
   display: flex;
   border-radius: 5px;
-  border: 1px solid #ffffff;
+  border: 1px solid transparent;
+  transition: 0.25s;
 }
 .github-profile:hover {
   border-color: #000000;
@@ -64,10 +65,17 @@ input[type="submit"]:hover {
   -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 8px 6px rgba(0, 0, 0, 0.15);
   -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 8px 6px rgba(0, 0, 0, 0.15);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 8px 6px rgba(0, 0, 0, 0.15);
+  transition: 0.25s;
 }
 .user-img {
-  max-width: 150px;
   padding-right: 2em;
+  padding-right: 2em;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 150px;
+  max-width: 150px;
+}
+.info {
+  overflow: auto;
 }
 img {
   width: 100%;
