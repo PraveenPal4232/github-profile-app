@@ -42,10 +42,16 @@ class Card extends React.Component {
     const user = this.props;
     return (
       <div className="github-profile">
-        <img src={user.avatar_url} alt="" />
+        <div className="user-img">
+          <img src={user.avatar_url} alt="" />
+        </div>
         <div className="info">
-          <div className="name">{user.name}</div>
-          <div className="company">{user.company}</div>
+          <h2 className="name">{user.name}</h2>
+          <p className="company">{user.company}</p>
+          <p className="location">{user.location}</p>
+          <p className="bio">
+            <a href={user.blog}>{user.blog}</a>
+          </p>
         </div>
       </div>
     );
@@ -64,8 +70,8 @@ class App extends React.Component {
   render() {
     return (
       <main>
-        <div className="header">
-          <h1>GitHub Profile App</h1>
+        <div className="header text-center">
+          <h1>GitHub User App</h1>
         </div>
         <Form onSubmit={this.addNewUser} />
         <CardList user={this.state.users} />

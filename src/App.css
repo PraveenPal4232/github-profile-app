@@ -1,32 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
 html {
   font-family: "Roboto Slab", serif;
   min-height: 100vh;
   border-top: 5px solid #000000;
   border-bottom: 5px solid #000000;
 }
+.text-center {
+  text-align: center;
+}
 main {
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
   padding: 1em;
 }
 form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 2em 1em;
 }
 input {
   border: 2px solid #000000;
-  padding: 5px;
+  padding: 7px;
   font-size: 16px;
   outline: none;
   color: #000000;
+  border-radius: 5px;
 }
-Search Results Web results ::placeholder {
+::placeholder {
   color: #000000;
+}
+input[type="text"] {
+  width: calc(100% - 100px);
 }
 input[type="submit"] {
   background-color: #000000;
   color: #ffffff;
   padding: 5px 10px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.github-profile {
+  padding: 1em;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+.github-profile:hover {
+  border-color: #000000;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+    0 8px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 8px 6px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 8px 6px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 8px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 8px 6px rgba(0, 0, 0, 0.15);
+}
+.user-img {
+  max-width: 150px;
+  padding-right: 2em;
+}
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+.name,
+.location {
+  padding-bottom: 5px;
 }
