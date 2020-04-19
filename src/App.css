@@ -68,11 +68,10 @@ input[type="submit"]:hover {
   transition: 0.25s;
 }
 .user-img {
-  padding-right: 2em;
-  padding-right: 2em;
+  padding-right: 1em;
   -ms-flex: 0 0 50%;
-  flex: 0 0 150px;
-  max-width: 150px;
+  flex: 0 0 125px;
+  max-width: 125px;
 }
 .info {
   overflow: auto;
